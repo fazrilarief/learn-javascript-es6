@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nilai1 = Number("1.24");
+      const nilai2 = 1;
+
+      const total = nilai1 + nilai2;
+
+      document.writeln(`<p> ${total} </p>`);
+
+      //   Konversi string to number
+      document.writeln(`<p> ${parseInt("1.2")} </p>`);
+      document.writeln(`<p> ${parseFloat("1.2")} </p>`);
+      document.writeln(`<p> ${Number("1.2")} </p>`);
+
+      //   Konversi number to string
+      const string1 = "1";
+      const string2 = "1";
+      const sum = string1 + string2;
+
+      document.writeln(`<p> ${sum.toString()} </p>`);
+
+      //   NaN
+      document.writeln(`<p> ${parseFloat("1saja")} </p>`); // 1
+      document.writeln(`<p> ${parseFloat("s1aja")} </p>`); // NaN
+      document.writeln(`<p> ${parseFloat("1")} </p>`); // 1
+      document.writeln(`<p> ${parseFloat("a")} </p>`); // NaN
+
+      //   isNaN()
+      const isNaN1 = "1";
+      const isNaN2 = "salah";
+      document.writeln(`<p> ${isNaN(isNaN1)} </p>`); // False
+      document.writeln(`<p> ${isNaN(isNaN2)} </p>`); // True
+    </script>
+  </body>
+</html>

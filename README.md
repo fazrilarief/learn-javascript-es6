@@ -71,3 +71,47 @@ Selain itu, string template juga bisa digunakan untuk sebuah expression, misal u
       // Expressions dialam String Template
       const nilai = 100;
       const template = `Nama : ${namaAsli}, Lulus : ${nilai > 75}`;
+
+## Konversi Number dan String
+
+Di javascript, kita bisa mengkonversikan nilai dari sebuah variabel. nilai bisa berasal dari inputan user misalnya.
+
+1.  parseInt(string) = mengkonversikan dari string ke number bilangan bulat
+2.  parseFloat(string) = mengkonversikan dari string ke number bilangan float
+3.  Number(string) = mengkonversikan dari string ke number sesuai data (bisa bulat ataupun float)
+4.  .toString() = mengkonversikan dari number ke string
+
+        //   Konversi string to number
+        document.writeln(`<p> ${parseInt("1.2")} </p>`);
+        document.writeln(`<p> ${parseFloat("1.2")} </p>`);
+        document.writeln(`<p> ${Number("1.2")} </p>`);
+
+        //   Konversi number to string
+        const string1 = "1";
+        const string2 = "1";
+        const sum = string1 + string2;
+        document.writeln(`<p> ${sum.toString()} </p>`);
+
+### NaN
+
+Not a Number adalah case ketika sebuah data yang akan dikonversikan dari number ke string, adalah bukan number. contoh "a" berbeda dengan "1" walaupun keduanya string.
+
+        document.writeln(`<p> ${parseFloat("1")} </p>`); // 1
+        document.writeln(`<p> ${parseFloat("a")} </p>`); // NaN
+
+Javascript akan mentoleransi suatu string yang akan dikonversi, jika numbernya ada didepan. jika tidak, maka output adalah NaN. hal tadi tidak berlaku untuk konversi "Number();"
+
+        document.writeln(`<p> ${parseFloat("1saja")} </p>`); // 1
+        document.writeln(`<p> ${parseFloat("s1aja")} </p>`); // NaN
+        document.writeln(`<p> ${Number("s1aja")} </p>`); // NaN
+
+NaN tidak bisa dioperasikan dengan bilangan apapun. Semua yang dioperasikan dengan NaN akan menghasilkan output NaN
+
+### isNaN()
+
+Adalah function untuk cek suatu nilai, apakah NaN atau bukan. Outputnya ada boolean (true/false).
+
+        const isNaN1 = "1";
+        const isNaN2 = "salah";
+        document.writeln(`<p> ${isNaN(isNaN1)} </p>`); // False
+        document.writeln(`<p> ${isNaN(isNaN2)} </p>`); // True
