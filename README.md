@@ -34,3 +34,9 @@ Contoh :
 6. (===) = sama dengan dan sama tipe
 7. (!=) = tidak sama dengan
 8. (!==) = tidak sama dengan atau tidak sama tipe
+
+## Operator Logika
+
+1. (&&) = dan -> operator ini digunakan untuk menghasilkan nilai true dengan syarat kedua atau lebih variabel bernilai true.
+2. (||) = atau -> operator ini digunakan untuk menghasilkan nilai true dengan syarat salah satu variable berniali true.
+3. (!) = unary -> operator ini digunakan untuk membalikan sebuah nilai, misal awalnya true maka akan m
