@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const namaAsli = "Fazril Arief Nugraha";
+      const firstName = "Fazril";
+      const middleName = "Arief";
+      const lastName = "Nugraha";
+
+      //   String Template
+      const nama = `Nama : ${firstName} ${middleName} ${lastName}`;
+      //   Cara Lama Javascript
+      const nama2 = "Nama : " + firstName + " " + middleName + " " + lastName;
+
+      //   Expressions dialam String Template
+      const nilai = 100;
+      const template = `Nama : ${namaAsli}, Lulus : ${nilai > 75}`;
+
+      console.log(nama);
+      console.log(nama2);
+      console.log(template);
+    </script>
+  </body>
+</html>

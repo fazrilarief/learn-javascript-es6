@@ -50,3 +50,24 @@ Merupakan fitur logging milik javascript, digunakan untuk proses debugging oleh 
 2. console.warn(...) = menampilkan informasi peringatan.
 3. console.error(...) = menampilkan pesan error.
 4. console.table(...) = menampilkan informasi bentuk table.
+
+## String Template
+
+Digunakan untuk memanggil nilai dari sebuah variabel dengan cara yang lebih ringkas dan efisien. dengan menambahkan backtick (``) dalam penulisannya.
+
+### Penulisan String Template
+
+Perbandingan typing :
+
+    //   String Template
+    const nama = `Nama : ${firstName} ${middleName} ${lastName}`;
+    //   Cara Lama Javascript
+    const nama2 = "Nama : " + firstName + " " + middleName + " " + lastName;
+
+### Expression didalam String Template
+
+Selain itu, string template juga bisa digunakan untuk sebuah expression, misal untuk status lulus berikut :
+
+      // Expressions dialam String Template
+      const nilai = 100;
+      const template = `Nama : ${namaAsli}, Lulus : ${nilai > 75}`;
