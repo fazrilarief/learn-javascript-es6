@@ -17,14 +17,14 @@
 5. (\*\*) Ekponensial/Pangkat.
 6. (%) Sisa bagi/Modulus.
 
-## Operator Augmented Assigments
+# Operator Augmented Assigments
 
 Operator ini digunakan untuk mempersingkat, jika ada sebuah variable yang melakukan operasi terhadap dirinya sendiri
 Contoh :
 
 1. result = result + 1 -> result += 1;
 
-## Operator Perbandingan
+# Operator Perbandingan
 
 1. (>) = lebih dari.
 2. (<) = kurang dari.
@@ -35,13 +35,13 @@ Contoh :
 7. (!=) = tidak sama dengan.
 8. (!==) = tidak sama dengan atau tidak sama tipe.
 
-## Operator Logika
+# Operator Logika
 
 1. (&&) = dan -> operator ini digunakan untuk menghasilkan nilai true dengan syarat kedua atau lebih variabel bernilai true.
 2. (||) = atau -> operator ini digunakan untuk menghasilkan nilai true dengan syarat salah satu variable berniali true.
 3. (!) = unary -> operator ini digunakan untuk membalikan sebuah nilai.
 
-## Console
+# Console
 
 Merupakan fitur logging milik javascript, digunakan untuk proses debugging oleh programmer tanpa mengganggu alur kerja sistem yang sedang berjalan.
 
@@ -51,11 +51,11 @@ Merupakan fitur logging milik javascript, digunakan untuk proses debugging oleh 
 3. console.error(...) = menampilkan pesan error.
 4. console.table(...) = menampilkan informasi bentuk table.
 
-## String Template
+# String Template
 
 Digunakan untuk memanggil nilai dari sebuah variabel dengan cara yang lebih ringkas dan efisien. dengan menambahkan backtick (``) dalam penulisannya.
 
-### Penulisan String Template
+## Penulisan String Template
 
 Perbandingan typing :
 
@@ -64,7 +64,7 @@ Perbandingan typing :
     //   Cara Lama Javascript
     const nama2 = "Nama : " + firstName + " " + middleName + " " + lastName;
 
-### Expression didalam String Template
+## Expression didalam String Template
 
 Selain itu, string template juga bisa digunakan untuk sebuah expression, misal untuk status lulus berikut :
 
@@ -72,7 +72,7 @@ Selain itu, string template juga bisa digunakan untuk sebuah expression, misal u
       const nilai = 100;
       const template = `Nama : ${namaAsli}, Lulus : ${nilai > 75}`;
 
-## Konversi Number dan String
+# Konversi Number dan String
 
 Di javascript, kita bisa mengkonversikan nilai dari sebuah variabel. nilai bisa berasal dari inputan user misalnya.
 
@@ -92,7 +92,7 @@ Di javascript, kita bisa mengkonversikan nilai dari sebuah variabel. nilai bisa 
         const sum = string1 + string2;
         document.writeln(`<p> ${sum.toString()} </p>`);
 
-### NaN
+## NaN
 
 Not a Number adalah case ketika sebuah data yang akan dikonversikan dari number ke string, adalah bukan number. contoh "a" berbeda dengan "1" walaupun keduanya string.
 
@@ -107,7 +107,7 @@ Javascript akan mentoleransi suatu string yang akan dikonversi, jika numbernya a
 
 NaN tidak bisa dioperasikan dengan bilangan apapun. Semua yang dioperasikan dengan NaN akan menghasilkan output NaN
 
-### isNaN()
+## isNaN()
 
 Adalah function untuk cek suatu nilai, apakah NaN atau bukan. Outputnya ada boolean (true/false).
 
@@ -115,3 +115,40 @@ Adalah function untuk cek suatu nilai, apakah NaN atau bukan. Outputnya ada bool
         const isNaN2 = "salah";
         document.writeln(`<p> ${isNaN(isNaN1)} </p>`); // False
         document.writeln(`<p> ${isNaN(isNaN2)} </p>`); // True
+
+# Array
+
+Array digunakan untuk menampung sebuah atau banyak nilai di sebuah variabel. Jadi, kita tidak perlu membuat banyak variable untuk menampung suatu nilai.
+Array di dalam javascript tidak memiliki batasan, kita bisa memasukan tipe data apapun didalam satu array, bahkan kita bisa memasukan array didalam array jika diperlukan.
+
+## Operasi di dalam Array
+
+1.  ( array.push(value) ) = menambah data ke dalam array.
+2.  ( array.length ) = melihat panjang array
+3.  ( array[index] ) = mendapat dara di posisi index
+4.  ( array[index] = value ) = mengubah data di posisi index
+5.  ( delete array[index] ) = hapus array berdasarkan index
+
+        // Contoh pembuatan array
+        const names = ["Fazril", "Fatma", 6];
+        console.table(names);
+
+        //   Contoh pembuatan array kosong
+        const arrayKosong = [];
+        arrayKosong.push("Ini");
+        arrayKosong.push("Isian Baru");
+        console.table(arrayKosong);
+
+        //   array.length
+        console.table(names.length);
+
+        //   array[index]
+        console.log(names[0]);
+
+        //   array[index] = value
+        names[0] = "dirubah";
+        console.table(names);
+
+        //   delete array[index]
+        delete names[1];
+        console.table(names);

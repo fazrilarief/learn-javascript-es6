@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Contoh pembuatan array
+      const names = ["Fazril", "Fatma", 6];
+      console.table(names);
+
+      //   Contoh pembuatan array kosong
+      const arrayKosong = [];
+      arrayKosong.push("Ini");
+      arrayKosong.push("Isian Baru");
+      console.table(arrayKosong);
+
+      //   array.length
+      console.table(names.length);
+
+      //   array[index]
+      console.log(names[0]);
+
+      //   array[index] = value
+      names[0] = "dirubah";
+      console.table(names);
+
+      //   delete array[index]
+      delete names[1];
+      console.table(names);
+    </script>
+  </body>
+</html>
