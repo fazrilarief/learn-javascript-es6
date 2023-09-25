@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // deklasari object
+      const orang = {};
+
+      // ubah property / attribute
+      orang["Nama"] = "Fazril Arief Nugraha";
+      orang["Alamat"] = "Indonesia";
+      orang["Umur"] = 21;
+
+      console.table(orang);
+
+      // hapus index object
+      delete orang["Umur"];
+
+      console.table(orang);
+
+      // penulisan object secara langsung
+      const orang2 = {
+        nama: "Fazril Arief Nugraha",
+        alamat: "Indonesia",
+        umur: 21,
+      };
+
+      console.table(orang2);
+
+      // akses properties object
+      console.log(`Nama : ${orang2.nama}`); //cara cepat (sering digunakan)
+      console.log(`Nama : ${orang2["nama"]}`); //cara lambat (jarang digunakan)
+    </script>
+  </body>
+</html>

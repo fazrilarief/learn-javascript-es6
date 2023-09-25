@@ -152,3 +152,43 @@ Array di dalam javascript tidak memiliki batasan, kita bisa memasukan tipe data 
         //   delete array[index]
         delete names[1];
         console.table(names);
+
+# Object
+
+Mirip dengan array, bedanya kalau di tipe data object, penamaan indexnya bukan lagi angka tapi langsung nama.
+
+        // Array
+        index : 0,1,2,3,4,....
+
+        // Object
+        index : nama, alamat, umur, ....
+
+\*besar kecil huruf dinggap berbeda untuk tiap nama indexnya : "Besar" berbeda dengan "besar"
+
+Penulisan object menggunakan kurung kurawa ( {} )
+
+        // Contoh Penulisan Object
+        const orang = {};
+
+        // ubah property / attribute
+        orang["Nama"] = "Fazril Arief Nugraha";
+        orang["Alamat"] = "Indonesia";
+        orang["Umur"] = 21;
+
+        // hapus index object
+        delete orang["Umur"];
+
+object bisa juga ditulis secara langsung seperti array
+
+        // penulisan object secara langsung
+        const orang2 = {
+                nama: "Fazril Arief Nugraha",
+                alamat: "Indonesia",
+                umur: 21,
+        };
+
+ada 2 cara akses object
+
+        // akses properties object
+        console.log(`Nama : ${orang2.nama}`); //cara cepat (sering digunakan)
+        console.log(`Nama : ${orang2["nama"]}`); //cara lambat (jarang digunakan)
