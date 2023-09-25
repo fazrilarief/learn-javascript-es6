@@ -305,3 +305,20 @@ Contoh :
         const names = [null, "Arief", null];
         const result = 0 in names;
         document.writeln(`${result}`);
+
+# Operator Tenary
+
+Operator ini adalah bentuk penyederhanaan dari if statement.
+
+Contoh :
+
+        const nilai = 80;
+
+        if (nilai >= 80) {
+                ucapan = "selamat anda lulus";
+        } else {
+                ucapan = "anda tidak lulus";
+        }
+
+        // Operator Tenary
+        document.writeln(`${ucapan}`);
