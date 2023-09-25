@@ -247,3 +247,36 @@ Confirm :
         } else {
                 document.writeln("bye bye!");
         }
+
+# Switch Case
+
+Pada pengkondisian ini, nilai yang di definisikan adalah nilainya langsung.
+
+        // deklarasi nilai
+        const nilai = "B";
+
+        // deklarasi switch case
+        switch (nilai) {
+                case "A":
+                        {
+                        document.writeln("Selamat anda lulus dengan nilai A");
+                        }
+                break;
+                case "B":
+                        {
+                        }
+                case "C":
+                        {
+                        document.writeln("Selamat anda lulus dengan nilai C");
+                        }
+                break;
+                case "D":
+                        {
+                        document.writeln("Nilai anda D, anda haru revisi");
+                        }
+                break;
+                default:
+                        document.writeln("Sepertinya anda salah jurusan");
+        }
+
+kondisinya bisa langsung kita deklarasikan seperti diatas, jika case "A" maka kondisi yang muncul mau seperti apa.
