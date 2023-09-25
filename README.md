@@ -192,3 +192,28 @@ ada 2 cara akses object
         // akses properties object
         console.log(`Nama : ${orang2.nama}`); //cara cepat (sering digunakan)
         console.log(`Nama : ${orang2["nama"]}`); //cara lambat (jarang digunakan)
+
+# if expression
+
+pengkondisian if digunakan untuk melakukan sebuah perbadingan antara nilai 1 dengan nilai lainnya.
+
+        // deklarasi nilai
+        const examValue = 100;
+
+        // deklarasi nilai
+        const examValue = 59;
+
+        // penulisan if
+        if (examValue >= 90) {
+                document.writeln("Grade A");
+        } else if (examValue >= 80) {
+                document.writeln("Grade B");
+        } else if (examValue >= 70) {
+                documnent.writeln("Grade C");
+        } else if (examValue >= 60) {
+                document.writeln("Grade D");
+        } else {
+                document.writeln("Grade E");
+        }
+
+"else if" digunakan apabila ada lebih dari 1 kondisi yang harus digunakan.
