@@ -280,3 +280,28 @@ Pada pengkondisian ini, nilai yang di definisikan adalah nilainya langsung.
         }
 
 kondisinya bisa langsung kita deklarasikan seperti diatas, jika case "A" maka kondisi yang muncul mau seperti apa.
+
+# Operator "in"
+
+operator ini digunakan untuk memeriksa suatu nilai, apakah ada nilai tersebut ada di dalam sebuah variabel atau tidak.
+
+Contoh :
+
+        let nama = {
+                firstName: "Fazril",
+                middleName: "Arief",
+        };
+
+        if ("firstName" in nama) {
+                alert(`Hello ${nama.firstName}`);
+        } else {
+                alert("Hello!");
+        }
+
+Bisa juga untuk membaca index array, selama index tersebut ada isinya maka akan dianggap true (walaupun bernilai "null")
+
+Contoh :
+
+        const names = [null, "Arief", null];
+        const result = 0 in names;
+        document.writeln(`${result}`);
