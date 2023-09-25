@@ -217,3 +217,33 @@ pengkondisian if digunakan untuk melakukan sebuah perbadingan antara nilai 1 den
         }
 
 "else if" digunakan apabila ada lebih dari 1 kondisi yang harus digunakan.
+
+# Popup
+
+tipe data ini menghasilkan boolean (true / false). Tipe data ini hanya berjalan di browser.
+
+## 3 Fitur di Popup
+
+Alert :
+
+        // Alert
+        alert("Cek lagi code anda!");
+
+Prompt :
+
+         // Prompt
+        const name = prompt("Siapa nama anda?");
+
+        // Memanggil inputan
+         alert(`Hello ${name}`);
+
+Confirm :
+
+        // Confirm
+        const masuk = confirm("Apakah anda ingin masuk?");
+        if (masuk) {
+                const nama = prompt("Siapa nama anda?");
+                alert(`Halo ${nama}`);
+        } else {
+                document.writeln("bye bye!");
+        }
